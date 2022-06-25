@@ -10,7 +10,7 @@ $app->router->get('/', function (){
 });
 
 $app->router->get('/contact', function (){
-    return 'Contact';
+    return 'Contact test git';
 });
 
 $app->run();
