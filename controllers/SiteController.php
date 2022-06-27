@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\core\Application;
 use app\core\Controller;
+use app\core\Request;
 
 /**
  * Class SiteController
@@ -14,18 +15,19 @@ class SiteController extends Controller
     public static function home()
     {
         $params = [
-            'name' => 'Tharisha'
+            'name' => 'Tharisha Imalka Perera'
         ];
-        return $this->render('home', $params);
+        return Controller::render('home', $params);
     }
 
     public static function contact()
     {
-        return $this->render('contact');
+        return Controller::render('contact');
     }
 
-    public static function handleContact()
+    public static function handleContact(Request $request)
     {
+        $body =  $request->getBody();
         return 'Handling Submitted Data';
     }
 }
