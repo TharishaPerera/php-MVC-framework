@@ -4,11 +4,11 @@
     <div class="row">
         <div class="mb-3 col-md-6">
             <label>First Name</label>
-            <input type="text" name="firstName" class="form-control">
+            <input type="text" name="firstname" class="form-control">
         </div>
         <div class="mb-3 col-md-6">
             <label>Last Name</label>
-            <input type="text" name="lastName" class="form-control">
+            <input type="text" name="lastname" class="form-control">
         </div>
     </div>
     <div class="mb-3 col-md-12">
